@@ -3,10 +3,10 @@
   position: sticky;
   top: 0;
   padding: clamp(0.75rem, 2vw, 1rem) 0;
-  background-color: var(--header-bg);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--border-color);
+  background-color: rgba(var(--ctp-mantle-rgb), 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid var(--border-color);
   z-index: 10;
 }
 

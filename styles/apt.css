@@ -166,20 +166,21 @@ body {
 }
 
 .copy-btn {
-    background-color: var(--ctp-surface1);
-    color: var(--ctp-text);
-    border: 1px solid var(--ctp-surface2);
+    background-color: var(--accent);
+    color: var(--bg-main);
+    border: none;
     border-radius: 6px;
     padding: 0.5rem 0.75rem;
     cursor: pointer;
     font-size: 0.8rem;
+    font-family: 'Fira Mono', monospace;
     font-weight: 600;
     margin-left: 1rem;
     transition: background-color 0.2s ease;
 }
 
 .copy-btn:hover {
-    background-color: var(--ctp-surface2);
+    background-color: var(--accent-hover);
 }
 
 .copy-btn.copied {
