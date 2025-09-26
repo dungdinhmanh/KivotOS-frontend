@@ -115,14 +115,14 @@
         const fileListBody = document.getElementById('file-list');
         const subtitle = document.querySelector('.subtitle');
         const repo = 'dungdinhmanh/KivotOS-repo'; // CHANGE THIS to your username/repo
-        const basePath = 'docs/apt';
+        const basePath = '';
 
         async function loadDirectory(path) {
             const cleanPath = path.replace(/\/\//g, '/').replace(/^\//, ''); // Clean up path
-            const apiPath = cleanPath ? `${basePath}/${cleanPath}` : basePath;
+            const apiPath = cleanPath || '';
             const apiUrl = `https://api.github.com/repos/${repo}/contents/${apiPath}`;
 
-            subtitle.textContent = `Browse packages in /apt/${cleanPath}`;
+            subtitle.textContent = `Browse repository${cleanPath ? `/${cleanPath}` : ''}`;
             fileListBody.innerHTML = `<tr><td colspan="3" class="loading-message">Loading repository contents...</td></tr>`;
 
             try {
